@@ -1,3 +1,4 @@
+require("./mineflayer-bot");
 require('dotenv').config();
 const fs = require('fs');
 const path = require('path');
