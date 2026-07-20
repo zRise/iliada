@@ -68,10 +68,14 @@ async function attemptFetch(page, nick) {
  * @returns {Promise<{html: string, status: number}>}
  */
 async function fetchProfileHtml(nick, maxAttempts = 3) {
-  const browser = await puppeteer.launch({
-    headless: true,
-    args: ['--no-sandbox', '--disable-setuid-sandbox'],
-  });
+const browser = await puppeteer.launch({
+  headless: true,
+  executablePath: "/usr/bin/chromium",
+  args: [
+    "--no-sandbox",
+    "--disable-setuid-sandbox"
+  ],
+});
 
   try {
     const page = await browser.newPage();
