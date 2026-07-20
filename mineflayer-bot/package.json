@@ -1,0 +1,15 @@
+{
+  "name": "hylex-mineflayer-bot",
+  "version": "1.0.0",
+  "description": "Bot Mineflayer que entra no servidor Hylex para coletar informações do jogo (ex: hologramas)",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "mineflayer": "^4.23.0",
+    "mineflayer-pathfinder": "^2.4.5",
+    "minecraft-data": "^3.78.0",
+    "dotenv": "^16.4.5"
+  }
+}
