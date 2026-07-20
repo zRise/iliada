@@ -6,7 +6,8 @@
   "type": "commonjs",
   "scripts": {
     "start": "node index.js",
-    "deploy": "node deploy-commands.js"
+    "deploy": "node deploy-commands.js",
+    "postinstall": "npx puppeteer browsers install chrome"
   },
   "dependencies": {
     "discord.js": "^14.15.3",
